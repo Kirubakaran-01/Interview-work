@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>Interview Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+
+                <img src="/LandZ App.svg" class="logo" alt="" />
+            </li>
+            <li><a href="#">
+                    <i class='bx bxs-Home'></i>
+                    <span class="nav-item">Home</span>
+                </a></li>
+            <li><a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="nav-item">Dashboard</span>
+                </a></li>
+            <li><a href="#">
+                    <i class='bx bxs-select-multiple'></i>
+                    <span class="nav-item">LandList</span>
+                </a></li>
+            <li><a href="#">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="nav-item">Check List</span>
+                </a></li>
+            <li><a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="nav-item">Contact</span>
+                </a></li>
+            <li><a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="nav-item">Settings</span>
+                </a></li>
+            <li><a href="#">
+                    <span class="nav-item">Logout</span>
+                </a></li>
+        </ul>
+        
+    </nav>
+    <div class="card-container">
+        <button>Basic details</button>
+        <button>Mark your Property</button>
+        <button>Location Details</button>
+        <button>Land details</button>
+        <button>Upload Documents</button>
+        <button>Images & Videos</button>
+        <button>Pricing & Other Details</button>
+        <div class="box">
+            <h4>10% Progress</h4>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"></div>
+            </div>
+            <p>Just Starting - You're 10% closer to a live listing</p>
+        </div>
+    </div>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__item">My Listings</a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__item">Land Listings</a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__item">New Listings</a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__item breadcrumbs__link--active">Basic Details</a>
+        </li>
+    </ul>
+    <div class="box-rendu">
+        <h4>Get Verified Fast ---Boost your listing Visibility</h4>
+        <p>Subscribe now to fast-track your land verification and enhance your listing's visibility. With our expedited verification service, your property gains instant credibility!</p>
+        <button class="button">Subscribe Now</button>
+    </div>
+    <div class="form-container">
+        <h2>List Your Property</h2>
+        <form action="submit_form.php" method="POST">
+            <!-- Property Title -->
+            <div class="form-group">
+                <label for="title">Property Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <!-- Location -->
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <!-- Price -->
+            <div class="form-group">
+                <label for="price">Price ($):</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+
+            <!-- Number of Bedrooms -->
+            <div class="form-group">
+                <label for="bedrooms">Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+            </div>
+
+            <!-- Number of Bathrooms -->
+            <div class="form-group">
+                <label for="bathrooms">Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+            </div>
+
+            <!-- Upload Image -->
+            <div class="form-group">
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-group">
+                <label for="contact">Contact Information:</label>
+                <input type="email" id="contact" name="contact" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit Listing</button>
+            </div>
+        </form>
+        
+</body>
+
+
+</html>

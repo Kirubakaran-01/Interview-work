@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+}
+.bx{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 22px;
+}
+.card-container{
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ccc;
+    position: fixed; /* Keeps the box in place while scrolling */
+    left: 90px; /* Distance from the left edge of the screen */
+    top:    0px; /* Distance from the top edge of the screen */
+    text-align: center;
+}
+.card-container button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    left: - 20px;
+    background-color: green ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.card-container button:hover {
+    background-color: #45a049;
+}
+.box {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    text-align: left;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.progress-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%; /* Set initial width here, or use inline style to adjust */
+    border-radius: 5px 0 0 5px; /* Round left side of the bar */
+}
+.box p{
+    font-size: 13px;
+    top: 10px;
+}
+.breadcrumbs{
+    padding: 24px;
+    font-family: sans-serif;
+}
+.breadcrumbs__item{
+    display: inline-block;
+    left: 380px;
+}
+.breadcrumbs__item:not(:last-of-type)::after{
+    content: '/';
+    margin: 0 5px;
+    color: #cccccc;
+}
+.breadcrumbs__link{
+    text-decoration: none;
+    color: #880f0f;
+}
+.breadcrumbs__link:hover{
+    text-decoration: underline;
+}
+.breadcrumbs__link--active{
+    color: #009578;
+    font-weight: 800;
+}
+
+.form-container {
+    width: 40%;
+    margin: 50px auto;
+    left: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+/* Form title */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and textarea styling */
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* File input styling */
+.form-group input[type="file"] {
+    padding: 5px;
+}
+
+/* Submit button styling */
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+.form-group button:hover {
+    background-color: #45a049;
+}
+.box-rendu{
+    align-items: center;
+    width: 25%;
+    margin: 10px auto;
+    padding: 35px;
+    top: 20px; /* Distance from the top */
+    margin-right: 135px; /* Distance from the right */
+    background-color: green;
+    color: white;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    text-align: left;
+}
+.box-rendu p{
+    font-size: 13px;
+    top: 20px;
+    margin-bottom: 10px;
+}
+.box-rendu button{
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    align-items: center;
+    color: green;
+    font-weight: 500;
+}
+.box-rendu button:hover {
+    background-color: #bc0808;
+    color: white;
+}
